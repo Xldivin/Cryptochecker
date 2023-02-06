@@ -1,38 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ccd6f6;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ccd6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.headerContainer h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.headerContainer input {
+  padding: 5px 10px 5px 10px;
+  width: 280px;
+  height: 40px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.buttonContainer img {
+  height: 45px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.buttonContainer img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+::placeholder {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.headerContainer input:focus {
+  outline: none;
+  border-bottom: solid #def2f1 2px;
+  transform: scale(1.05);
+}
+
+.headerContainer input:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.2s;
+}
+
+.coinContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingMssg {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
